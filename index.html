@@ -1,1 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis Agri Education - Smart Feed Formulation Solutions</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            emerald: '#059669',
+                            gold: '#D97706',
+                            lightGold: '#F59E0B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-emerald {
+            box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.25);
+        }
+        .glow-gold {
+            box-shadow: 0 0 25px -5px rgba(217, 119, 6, 0.25);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
 
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-amber-500 p-0.5 shadow-lg">
+                    <div class="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-between p-1.5">
+                        <i class="fa-solid fa-wheat-awn text-emerald-400 text-lg"></i>
+                        <i class="fa-solid fa-seedling text-amber-400 text-xs"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-200 to-amber-300">
+                        Oasis Agri Education
+                    </span>
+                    <span class="block text-[10px] text-slate-400 tracking-wider font-semibold uppercase">Smart Agri-Tech Solutions</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#home" class="hover:text-emerald-400 transition-colors">Home</a>
+                <a href="#apps" class="hover:text-emerald-400 transition-colors">Flagship Apps</a>
+                <a href="#features" class="hover:text-emerald-400 transition-colors">Features</a>
+                <a href="#preview" class="hover:text-emerald-400 transition-colors">UI Preview</a>
+                <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="#apps" class="hidden sm:inline-flex items-center px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white shadow-md shadow-emerald-950/40 transition-all">
+                    Explore Apps
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.12),transparent_50%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(217,119,6,0.1),transparent_50%)]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-6">
+                <i class="fa-solid fa-microchip mr-2 text-xs"></i> Advanced Agricultural Algorithms
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight max-w-4xl mx-auto leading-tight">
+                Precision Feed Formulation Solutions by <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-amber-300">Oasis Agri Education</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-light">
+                Smart Least-Cost Ration Formulation Apps for Dairy Farmers, Poultry Growers, Nutritionists & Feed Manufacturers. Optimize nutrition, reduce feed costs, and maximize farm profitability.
+            </p>
+
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#apps" class="px-8 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-lg shadow-emerald-900/50 flex items-center space-x-3 transition-all hover:scale-[1.02]">
+                    <i class="fa-solid fa-mobile-screen-button text-lg"></i>
+                    <span>Browse Android Apps</span>
+                </a>
+                <a href="#features" class="px-8 py-3.5 rounded-xl glass-card text-slate-200 hover:text-white hover:bg-slate-800/80 font-semibold border border-slate-700/60 transition-all">
+                    Key Features
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flagship Apps Section -->
+    <section id="apps" class="py-16 bg-slate-900/80 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white tracking-tight">Flagship Android Applications</h2>
+                <p class="mt-3 text-slate-400 text-sm sm:text-base max-w-xl mx-auto">Scientifically backed ration balancing tools engineered specifically for modern livestock and poultry management.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                
+                <!-- CARD 1: CATTLE FEED FORMULATION -->
+                <div class="glass-card rounded-2xl p-6 sm:p-8 hover:border-emerald-500/50 transition-all duration-300 glow-emerald flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-5 mb-6">
+                            <!-- SVG Emblem matching Cattle 512 icon -->
+                            <div class="w-20 h-20 flex-shrink-0 bg-slate-950 rounded-2xl p-1 shadow-inner border border-slate-700/50">
+                                <svg viewBox="0 0 200 200" class="w-full h-full">
+                                    <defs>
+                                        <linearGradient id="navyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#0F172A" />
+                                            <stop offset="100%" stop-color="#1E293B" />
+                                        </linearGradient>
+                                        <linearGradient id="emeraldArrow" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#10B981" />
+                                            <stop offset="100%" stop-color="#059669" />
+                                        </linearGradient>
+                                        <linearGradient id="goldGrain" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#F59E0B" />
+                                            <stop offset="100%" stop-color="#D97706" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Outer Circle -->
+                                    <circle cx="100" cy="100" r="95" fill="url(#navyBg)" stroke="#334155" stroke-width="4" />
+                                    <!-- Inner Ring -->
+                                    <circle cx="100" cy="100" r="88" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="4,2" />
+                                    <!-- Corn Cob Left -->
+                                    <g transform="translate(30, 110) rotate(-25)">
+                                        <rect x="0" y="0" width="16" height="40" rx="8" fill="#F59E0B" />
+                                        <circle cx="5" cy="10" r="2" fill="#FEF08A" />
+                                        <circle cx="11" cy="10" r="2" fill="#FEF08A" />
+                                        <circle cx="5" cy="20" r="2" fill="#FEF08A" />
+                                        <circle cx="11" cy="20" r="2" fill="#FEF08A" />
+                                        <circle cx="5" cy="30" r="2" fill="#FEF08A" />
+                                        <circle cx="11" cy="30" r="2" fill="#FEF08A" />
+                                        <path d="M-4,35 Q8,45 20,35 Q10,20 -4,35 Z" fill="#10B981" />
+                                    </g>
+                                    <!-- Wheat Stalk Right -->
+                                    <path d="M165,140 Q150,90 125,50" stroke="#F59E0B" stroke-width="3" fill="none" />
+                                    <ellipse cx="150" cy="115" rx="5" ry="9" fill="url(#goldGrain)" transform="rotate(25 150 115)" />
+                                    <ellipse cx="140" cy="95" rx="5" ry="9" fill="url(#goldGrain)" transform="rotate(20 140 95)" />
+                                    <ellipse cx="130" cy="75" rx="5" ry="9" fill="url(#goldGrain)" transform="rotate(15 130 75)" />
+                                    <ellipse cx="120" cy="55" rx="4" ry="7" fill="url(#goldGrain)" transform="rotate(10 120 55)" />
+                                    <!-- Dynamic Green Growth Arrow -->
+                                    <path d="M 35 145 C 70 145, 90 90, 165 45 L 150 45 M 165 45 L 165 60" stroke="url(#emeraldArrow)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                    <!-- Stylized Cattle Head -->
+                                    <path d="M 85,75 C 95,60 120,60 130,75 C 135,85 140,105 130,125 C 120,140 95,140 85,125 C 75,105 80,85 85,75 Z" fill="#F8FAFC" />
+                                    <!-- Muzzle -->
+                                    <ellipse cx="112" cy="122" rx="14" ry="9" fill="#CBD5E1" />
+                                    <circle cx="106" cy="122" r="2.5" fill="#475569" />
+                                    <circle cx="118" cy="122" r="2.5" fill="#475569" />
+                                    <!-- Eye -->
+                                    <circle cx="102" cy="88" r="4" fill="#0F172A" />
+                                    <circle cx="103" cy="87" r="1.5" fill="#FFFFFF" />
+                                    <!-- Horn -->
+                                    <path d="M 88,72 Q 78,55 70,60 Q 78,66 85,74 Z" fill="#94A3B8" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Cattle Feed Formulation</h3>
+                                <p class="text-xs text-emerald-400 font-mono mt-0.5">com.mpi.cattlefeeds</p>
+                                <div class="flex items-center space-x-1 mt-1 text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span class="text-slate-400 ml-1">(4.8 / 5.0)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                            Complete dairy and beef ration balancing system customized for global and indigenous cattle breeds with real-time target matrix optimization.
+                        </p>
+
+                        <div class="space-y-3 mb-8">
+                            <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Key Capabilities</h4>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-300">
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                    <span>Breed Specs: HF, Jersey, Gir, Sahiwal, Buffaloes</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                    <span>Dry Matter Intake (DMI) & CP Calculations</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                    <span>4% Fat Corrected Milk (FCM) Formulas</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                    <span>18+ Nutrient Specs (NDF, NE_L, RUP, Ca, P)</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                    <span>TDN & Net Energy for Lactation Engine</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                    <span>Go Ad-Free & Lifetime Access Option</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">Android App • Mobile & Tablet</span>
+                        <a href="https://play.google.com/store/apps/details?id=com.mpi.cattlefeeds" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-xs font-semibold transition-all hover:scale-105">
+                            <i class="fa-brands fa-google-play text-emerald-400 text-base"></i>
+                            <span>Get it on Google Play</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2: POULTRY FEED FORMULATION -->
+                <div class="glass-card rounded-2xl p-6 sm:p-8 hover:border-amber-500/50 transition-all duration-300 glow-gold flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-5 mb-6">
+                            <!-- SVG Emblem matching Layer logo512 -->
+                            <div class="w-20 h-20 flex-shrink-0 bg-slate-950 rounded-2xl p-1 shadow-inner border border-slate-700/50">
+                                <svg viewBox="0 0 200 200" class="w-full h-full">
+                                    <defs>
+                                        <linearGradient id="silverRim" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#E2E8F0" />
+                                            <stop offset="50%" stop-color="#94A3B8" />
+                                            <stop offset="100%" stop-color="#475569" />
+                                        </linearGradient>
+                                        <linearGradient id="poultryBg" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#1E293B" />
+                                            <stop offset="100%" stop-color="#0F172A" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Metallic Rim -->
+                                    <circle cx="100" cy="100" r="96" fill="url(#silverRim)" />
+                                    <circle cx="100" cy="100" r="88" fill="url(#poultryBg)" />
+                                    <!-- Feed Bowl with Grains (Bottom) -->
+                                    <path d="M 50,135 Q 100,175 150,135 Z" fill="#D97706" />
+                                    <ellipse cx="100" cy="135" rx="50" ry="8" fill="#F59E0B" />
+                                    <circle cx="80" cy="132" r="2.5" fill="#FEF08A" />
+                                    <circle cx="95" cy="130" r="3" fill="#FEF08A" />
+                                    <circle cx="110" cy="133" r="2.5" fill="#FEF08A" />
+                                    <circle cx="125" cy="131" r="2" fill="#FEF08A" />
+                                    <!-- Green Leaf Accent -->
+                                    <path d="M 140,120 Q 165,110 170,130 Q 145,140 140,120 Z" fill="#10B981" />
+                                    <path d="M 145,125 Q 160,118 165,130" stroke="#059669" stroke-width="1.5" fill="none" />
+                                    <!-- White Hen Silhouette -->
+                                    <path d="M 70,125 C 60,110 65,85 80,75 C 90,68 105,60 120,55 C 122,48 128,40 138,40 C 145,40 150,45 150,52 C 145,58 142,65 142,72 C 150,85 145,110 125,125 Z" fill="#FFFFFF" />
+                                    <!-- Comb (Red) -->
+                                    <path d="M 134,40 Q 136,30 142,32 Q 146,30 148,35 Q 152,32 154,40 Z" fill="#EF4444" />
+                                    <!-- Wattle (Red) -->
+                                    <path d="M 148,53 Q 154,55 150,62 Q 145,60 146,53 Z" fill="#EF4444" />
+                                    <!-- Beak (Gold) -->
+                                    <path d="M 150,47 L 162,50 L 149,54 Z" fill="#F59E0B" />
+                                    <!-- Eye -->
+                                    <circle cx="140" cy="47" r="2" fill="#0F172A" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Poultry Feed Formulation</h3>
+                                <p class="text-xs text-amber-400 font-mono mt-0.5">com.mpi.poultryfeeds</p>
+                                <div class="flex items-center space-x-1 mt-1 text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="text-slate-400 ml-1">(4.9 / 5.0)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                            Intelligent Least-Cost Feed Optimization engine tailored for commercial broilers, layers, and backyard poultry farming.
+                        </p>
+
+                        <div class="space-y-3 mb-8">
+                            <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Key Capabilities</h4>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-300">
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-amber-400 mt-0.5"></i>
+                                    <span>Least-Cost Formulation (LCF) Linear Engine</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-amber-400 mt-0.5"></i>
+                                    <span>Layers (Pre-layer, Chick, Layer Phases)</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-amber-400 mt-0.5"></i>
+                                    <span>Broilers (Pre-starter, Starter, Finisher)</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-amber-400 mt-0.5"></i>
+                                    <span>Detailed Pie Charts & Nutrient Breakdowns</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-amber-400 mt-0.5"></i>
+                                    <span>Save, Export PDF & Share Custom Rations</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <i class="fa-solid fa-circle-check text-amber-400 mt-0.5"></i>
+                                    <span>Automatic Price Updates & Database Mgmt</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">Android App • Mobile & Tablet</span>
+                        <a href="https://play.google.com/store/apps/details?id=com.mpi.poultryfeeds" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white text-xs font-semibold transition-all hover:scale-105">
+                            <i class="fa-brands fa-google-play text-amber-400 text-base"></i>
+                            <span>Get it on Google Play</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Feature Highlights Section -->
+    <section id="features" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold text-emerald-400 uppercase tracking-widest">Why Choose Oasis Agri Education Apps</span>
+                <h2 class="text-3xl font-extrabold text-white mt-2">Engineered for Agricultural Excellence</h2>
+                <p class="mt-4 text-slate-400 text-sm">Combining mathematical optimization algorithms with real-world animal nutrition science.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl mb-4">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Least-Cost Optimization</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Reduces overall feed production expenses by calculating the lowest-cost mixture of available ingredients while strictly satisfying all nutritional thresholds.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-xl mb-4">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Multi-Species & Breed Support</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Pre-loaded standard requirements for commercial dairy breeds (HF, Jersey, Gir), buffaloes, broiler stages, layer production phases, and local breeds.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-xl mb-4">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Comprehensive Ingredient Matrix</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Extensive database containing grains, oil cakes, crop residues, bypass fats, and mineral mixtures with fully editable prices and nutrient specs.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-xl mb-4">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Reports & Instant Sharing</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Generate clean formulation reports with visual pie charts. Export and share formulas instantly with farm managers or clients.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-4">
+                        <i class="fa-solid fa-wifi-slash"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">100% Offline Capability</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Formulate rations directly in remote farm locations without requiring active cellular data or internet connectivity.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Ad-Free Lifetime Access</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Enjoy smooth, uninterrupted ration balancing with optional lifetime ad-free premium passes available inside the app.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App UI Screenshots Showcase -->
+    <section id="preview" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white">App UI Showcase</h2>
+                <p class="mt-3 text-slate-400 text-sm">Designed with clean, spreadsheet-style interfaces for fast and accurate input.</p>
+            </div>
+
+            <!-- UI Mockup Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Screenshot Mockup 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800">
+                    <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-slate-300">Target Nutrient Requirements</span>
+                        <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded">Cattle App</span>
+                    </div>
+                    <div class="p-4 space-y-3 font-mono text-xs">
+                        <div class="bg-slate-800/60 p-3 rounded-lg flex justify-between items-center">
+                            <span class="text-slate-300">Dry Matter Intake (DMI)</span>
+                            <span class="text-emerald-400 font-bold">14.2 kg/day</span>
+                        </div>
+                        <div class="bg-slate-800/60 p-3 rounded-lg flex justify-between items-center">
+                            <span class="text-slate-300">Crude Protein (CP)</span>
+                            <span class="text-emerald-400 font-bold">16.5 %</span>
+                        </div>
+                        <div class="bg-slate-800/60 p-3 rounded-lg flex justify-between items-center">
+                            <span class="text-slate-300">TDN Energy</span>
+                            <span class="text-emerald-400 font-bold">68.0 %</span>
+                        </div>
+                        <div class="bg-slate-800/60 p-3 rounded-lg flex justify-between items-center">
+                            <span class="text-slate-300">4% FCM Yield</span>
+                            <span class="text-amber-400 font-bold">18.0 L</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Screenshot Mockup 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800">
+                    <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-slate-300">Least-Cost Ration Mix</span>
+                        <span class="text-[10px] bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded">Poultry App</span>
+                    </div>
+                    <div class="p-4 space-y-2.5 font-mono text-xs">
+                        <div class="flex justify-between text-slate-400 text-[10px] border-b border-slate-800 pb-1">
+                            <span>INGREDIENT</span>
+                            <span>INCLUSION</span>
+                            <span>COST/KG</span>
+                        </div>
+                        <div class="flex justify-between text-slate-200">
+                            <span>Yellow Corn</span>
+                            <span class="text-amber-400">58.5 %</span>
+                            <span>$0.28</span>
+                        </div>
+                        <div class="flex justify-between text-slate-200">
+                            <span>Soybean Meal 44%</span>
+                            <span class="text-amber-400">28.0 %</span>
+                            <span>$0.48</span>
+                        </div>
+                        <div class="flex justify-between text-slate-200">
+                            <span>Rice Bran</span>
+                            <span class="text-amber-400">8.0 %</span>
+                            <span>$0.15</span>
+                        </div>
+                        <div class="flex justify-between text-slate-200">
+                            <span>DCP & Minerals</span>
+                            <span class="text-amber-400">5.5 %</span>
+                            <span>$0.90</span>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-slate-800 flex justify-between font-bold text-emerald-400">
+                            <span>Total Batch Cost</span>
+                            <span>$324.50 / Ton</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Screenshot Mockup 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800">
+                    <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-slate-300">Species & Breed Selector</span>
+                        <span class="text-[10px] bg-teal-500/20 text-teal-400 px-2 py-0.5 rounded">Both Apps</span>
+                    </div>
+                    <div class="p-4 space-y-3 text-xs">
+                        <div class="p-2.5 rounded-lg border border-emerald-500/40 bg-emerald-500/10 flex items-center justify-between">
+                            <span class="font-semibold text-emerald-300">Holstein Friesian (High Lactation)</span>
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                        </div>
+                        <div class="p-2.5 rounded-lg border border-slate-800 bg-slate-800/40 flex items-center justify-between text-slate-400">
+                            <span>Indigenous Gir / Sahiwal Dual Purpose</span>
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                        <div class="p-2.5 rounded-lg border border-slate-800 bg-slate-800/40 flex items-center justify-between text-slate-400">
+                            <span>Broiler Finisher Phase (Days 29-42)</span>
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                        <div class="p-2.5 rounded-lg border border-slate-800 bg-slate-800/40 flex items-center justify-between text-slate-400">
+                            <span>Commercial Layer (Phase 1 Peak)</span>
+                            <i class="fa-regular fa-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 border-t border-slate-800 text-slate-400 py-12 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <span class="text-lg font-bold text-white tracking-tight">Oasis Agri Education</span>
+                    <p class="mt-2 text-slate-400 max-w-sm leading-relaxed">
+                        Dedicated to empowering livestock producers, feed mill managers, and poultry farmers with precision formulation software on mobile platforms.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3 uppercase tracking-wider text-[11px]">Applications</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.mpi.cattlefeeds" target="_blank" class="hover:text-emerald-400 transition-colors">
+                                Cattle Feed Formulation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.mpi.poultryfeeds" target="_blank" class="hover:text-amber-400 transition-colors">
+                                Poultry Feed Formulation
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3 uppercase tracking-wider text-[11px]">Contact & Support</h4>
+                    <p class="text-slate-400">For inquiries, custom solutions, or feedback:</p>
+                    <a href="mailto:support@oasisagriedu.com" class="text-emerald-400 hover:underline block mt-1 font-mono">support@oasisagriedu.com</a>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-slate-500">
+                <p>&copy; 2026 Oasis Agri Education. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
